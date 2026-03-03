@@ -345,7 +345,6 @@ export default function PosterPage() {
       <section className="py-4 border-b border-border">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-3" data-testid="tags-keywords">
-            <Badge variant="outline" className="font-mono text-xs">Capstone Project</Badge>
             <Badge variant="outline" className="font-mono text-xs">Blockchain</Badge>
             <Badge variant="outline" className="font-mono text-xs">DeFi</Badge>
             <Badge variant="outline" className="font-mono text-xs">Transaction Ordering</Badge>
@@ -1033,7 +1032,7 @@ export default function PosterPage() {
                 Ordera &mdash; Optimised Blockchain Network for Use-Case Specific Transaction Prioritization
               </p>
               <p className="text-xs text-muted-foreground mt-1">
-                Capstone Project &middot; Hyperledger Fabric &middot; 2025
+                Hyperledger Fabric &middot; 2025
               </p>
             </motion.div>
           </motion.div>
