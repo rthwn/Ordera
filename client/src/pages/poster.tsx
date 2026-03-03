@@ -1030,7 +1030,7 @@ export default function PosterPage() {
 
             <motion.div variants={fadeInUp} className="mt-12 pt-8 border-t border-border">
               <p className="text-xs text-muted-foreground font-mono">
-                Optimised Blockchain Network for Use-Case Specific Transaction Prioritization
+                Ordera &mdash; Optimised Blockchain Network for Use-Case Specific Transaction Prioritization
               </p>
               <p className="text-xs text-muted-foreground mt-1">
                 Capstone Project &middot; Hyperledger Fabric &middot; 2025
