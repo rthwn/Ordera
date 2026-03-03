@@ -28,5 +28,28 @@ A product-focused poster/landing page showcasing the "Optimised Blockchain Netwo
 - Lucide React icons
 - Inter font (sans), JetBrains Mono (mono)
 
-## Running
+## Running Locally
 `npm run dev` starts both Express backend and Vite frontend dev server
+
+## GitHub Pages Deployment
+The `docs/` folder contains the pre-built static site ready for GitHub Pages.
+
+### Build for GitHub Pages
+```bash
+npx vite build --config vite.ghpages.config.ts
+cp docs/index.html docs/404.html
+touch docs/.nojekyll
+```
+
+### GitHub Setup Steps
+1. Push this entire repo to a GitHub repository
+2. Go to repo Settings > Pages
+3. Under "Build and deployment", set Source to "Deploy from a branch"
+4. Set Branch to `main` and folder to `/docs`
+5. Click Save — your site will be live at `https://<username>.github.io/<repo-name>/`
+
+### Files
+- `vite.ghpages.config.ts` - Vite config for static GitHub Pages build (uses relative `./` base path)
+- `docs/` - Pre-built static output folder served by GitHub Pages
+- `docs/.nojekyll` - Tells GitHub Pages to skip Jekyll processing
+- `docs/404.html` - Copy of index.html for SPA client-side routing
